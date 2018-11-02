@@ -410,9 +410,6 @@ client.on('guildDelete', guild => {
 
 
 
-client.login(process.env.BOT_TOKEN);
-
-
 client.on("message", msg => {
         const kufur = ["oç", "amk", "ananı sikiyim", "ananıskm", "piç", "amk", "amsk", "sikim", "sikiyim", "orospu çocuğu", "piç kurusu", "kahpe", "orospu", "mal", "sik", "yarrak", "amcık", "amık", "yarram", "sikimi ye", "mk", "mq", "aq", "ak", "amq",];
         if (kufur.some(word => msg.content.includes(word))) {
@@ -427,3 +424,5 @@ client.on("message", msg => {
           }
         }
     });
+
+client.login(process.env.BOT_TOKEN);
