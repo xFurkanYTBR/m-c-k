@@ -410,7 +410,7 @@ client.on('guildDelete', guild => {
 
 
 
-client.login(ayarlar.token);
+client.login(process.env.BOT_TOKEN);
 
 
 client.on("message", msg => {
