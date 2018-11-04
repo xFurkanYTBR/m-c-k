@@ -355,12 +355,12 @@ client.on("guildMemberAdd", member => {
 	var channel = member.guild.channels.find("name", "giriş-çıkış");
 	if (!channel) return;
 	
-	var role = member.guild.roles.find("name", "Kafadar Ailesi");
+	var role = member.guild.roles.find("name", "「~💰~」✮ Ɩƛ ✮ αяму ✮「~💰~」");
 	if (!role) return;
 	
 	member.addRole(role); 
 	
-	channel.send(member + " Artık " + role + " İle Botumuzu Desteklemek İçin Sunucuya Katıldı. ");
+	channel.send(member + " Artık Bir " + role + " Den **Sunucumuza Hoşgeldin** ");
 	
 	member.send("Sunucumuza Hoşgeldin!")
 	
@@ -395,7 +395,7 @@ client.on('guildCreate', guild => {
   .setDescription(`Bot, 》${guild.name}《 adlı sunucuya katıldı [${guild.memberCount} Üye]!`)
   .setFooter('Darq*', client.user.avatarURL)
   .setTimestamp()
-  client.channels.get('461482059802607625').send(embed);
+  client.channels.get('307454426384302082').send(embed);
 });
 
 client.on('guildDelete', guild => {
@@ -405,7 +405,7 @@ client.on('guildDelete', guild => {
   .setDescription(`Bot, 》${guild.name}《 sunucudan ayrıldı [${guild.memberCount} Üye]!`)
   .setFooter('Darq*', client.user.avatarURL)
   .setTimestamp()
-  client.channels.get('461482059802607625').send(embed);
+  client.channels.get('307454426384302082').send(embed);
 });
 
 
